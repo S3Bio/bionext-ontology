@@ -1,5 +1,5 @@
-@prefix bn: <https://jamiesilakom618.github.io/BioNExt/ontology/> .
-@prefix bnr: <https://jamiesilakom618.github.io/BioNExt/resource/> .
+@prefix bn: <https://w3id.org/bionext/ontology/> .
+@prefix bnr: <https://w3id.org/bionext/resource/> .
 @prefix bp: <http://www.biopax.org/release/biopax-level3.owl#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix orth: <http://purl.org/net/orth#> .
@@ -32,7 +32,7 @@ bn: a owl:Ontology ;
     dct:publisher <https://s3bio.gitlab.io/> ;
     rdfs:comment """An ontology for representing biological entities, pathway participation, orthologous relationships, evidence, and cross-database integration for yeast and human biological models.
 """@en ;
-    owl:versionIRI <https://jamiesilakom618.github.io/BioNExt/releases/v1.0.0/bionext.ttl> ;
+    owl:versionIRI <https://w3id.org/bionext/releases/v1.0.0/bionext.ttl> ;
     owl:versionInfo "1.0.0" .
 
 bn:Activation a owl:Class,
