@@ -1,0 +1,6555 @@
+[
+  {
+    "@id": "https://w3id.org/bionext/ontology/hasTemplate",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Indicates that the subject entity is derived from or synthesized using the object entity as a template. For example, DNA is a template for RNA during transcription, or a gene is derived from a DNA sequence."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Gene"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has template"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Dna"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/RO_0001000"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/annotates"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/MessengerRNA",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RnaRegion"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Encodes the genetic blueprint transcribed from DNA and delivers it to ribosomes for protein synthesis."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "mRNA"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/SO_0000234"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RnaRegion"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/CoOccurence",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RelationshipType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A relationship where two entities are repeatedly observed together across different datasets or conditions."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Co-occurrence"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RelationshipType"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedLeft": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Gene"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/Protein"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedRight": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Gene"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/Protein"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Ontology"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2026-07-13"
+      }
+    ],
+    "http://purl.org/dc/terms/creator": [
+      {
+        "@id": "https://orcid.org/0009-0003-1344-2449"
+      }
+    ],
+    "http://purl.org/dc/terms/issued": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2026-07-13"
+      }
+    ],
+    "http://purl.org/dc/terms/license": [
+      {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2026-10-30"
+      }
+    ],
+    "http://purl.org/dc/terms/publisher": [
+      {
+        "@id": "https://s3bio.gitlab.io/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "An ontology for representing biological entities, pathway participation, orthologous relationships, evidence, and cross-database integration for yeast and human biological models.\n"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "BioNExt Ontology"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#versionIRI": [
+      {
+        "@id": "https://w3id.org/bionext/releases/v1.1.0/bionext.ttl"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#versionInfo": [
+      {
+        "@value": "1.1.0"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Dissociation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RelationshipType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A relationship where entities previously bound together become separated, indicating a loss of interaction."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Dissociation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/INO_0000092"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RelationshipType"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedLeft": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/NodeEntity"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedRight": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/NodeEntity"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Rna",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A physical entity consisting of ribonucleotide monophosphates. Represents a pool of Rna molecules. Use RnaRegion for subregions. Examples: let-7 microRna, mRna, rRna."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Rna  element"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://www.biopax.org/release/biopax-level3.owl#Rna"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/NodeEntity"
+      },
+      {
+        "@id": "_:Nd84448369eae4a8881c9248077a0d543"
+      },
+      {
+        "@id": "_:N7c55244f79d644b78962ec2418767dce"
+      },
+      {
+        "@id": "_:Ne1c00a16a68147d99ef957da7395d95c"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#disjointWith": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/OrthologGroup"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/SmallMolecule"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/Protein"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/Complex"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nd84448369eae4a8881c9248077a0d543",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:N13fcbf6a3f1046b0953ee09376f0960f"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/hasVariant"
+      }
+    ]
+  },
+  {
+    "@id": "_:N13fcbf6a3f1046b0953ee09376f0960f",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "_:N6436edbf61ae405aa5013a92ea24b867"
+          },
+          {
+            "@id": "https://w3id.org/bionext/ontology/Rna"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:N6436edbf61ae405aa5013a92ea24b867",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onDataRange": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/hasHGVS"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "_:N7c55244f79d644b78962ec2418767dce",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RnaRegion"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/hasRegion"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ne1c00a16a68147d99ef957da7395d95c",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Rna"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/isVariantOf"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/hasExternalId",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Associates an entity with an external database identifier that has been accepted as an equivalent identifier for the same entity. This property is used for entity integration and identifier normalization. In contrast to hasDbXref, which records source-provided cross-references without asserting equivalence, hasExternalId indicates that the linked identifier refers to the same integrated entity."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has external identifier"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/VaultRNA",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RnaRegion"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A non-coding small RNA associated with vault complexes; its exact biological function remains unclear."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "vtRNA"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/SO_0002040"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RnaRegion"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Dna",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A physical entity consisting of deoxyribonucleotide monophosphates. Represents a pool of DNA molecules. Use DnaRegion for subregions."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Dna  element"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://www.biopax.org/release/biopax-level3.owl#Dna"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/NodeEntity"
+      },
+      {
+        "@id": "_:Nbccfb60a9e7542578e44ec243b8a1e4b"
+      },
+      {
+        "@id": "_:N0525c67671c74c89a945af468e364395"
+      },
+      {
+        "@id": "_:Nff738fa8a31146ffb7583f88ef78a2ac"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#disjointWith": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/OrthologGroup"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/SmallMolecule"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/Protein"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/Complex"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nbccfb60a9e7542578e44ec243b8a1e4b",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:Ndc556ace3a5641da80e068181bc103e0"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/hasVariant"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ndc556ace3a5641da80e068181bc103e0",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "_:N0711b0c437b5482b9b86c979304bbfac"
+          },
+          {
+            "@id": "https://w3id.org/bionext/ontology/Dna"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:N0711b0c437b5482b9b86c979304bbfac",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onDataRange": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/hasHGVS"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "_:N0525c67671c74c89a945af468e364395",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/DnaRegion"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/hasRegion"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nff738fa8a31146ffb7583f88ef78a2ac",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Dna"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/isVariantOf"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/PositiveCorrelation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/CoExpression"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The relationship that one gene's expression level increases across samples, the other gene's expression also increases."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Positive Correlation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/CoExpression"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedLeft": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Gene"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedRight": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Gene"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/CompoundMediatedStep",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RelationshipType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A derived network step representing one segment of a compound-mediated biological relationship. It does not by itself assert production, binding, activation, or inhibition."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Compound-mediated step"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RelationshipType"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/SmallNuclearRNA",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RnaRegion"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A non-coding RNA which is an essential component of the spliceosome involved in pre-mRNA splicing."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "snRNA"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/SO_0000274"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RnaRegion"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/hasVariant",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A  gene or gene product to a specific sequence variant described using HGVS notation (e.g., cDNA, protein, or genomic level). The object is an RDF resource identified by a unique identifier combining the protein or gene accession and the HGVS expression (e.g., UniProt:P04637_p.R273H)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:N1fb894aa65a54df2b8d1dfc2cd10753c"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has variant"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:N054e59a7cdf94c1bb0e4fc78e9978d71"
+      }
+    ]
+  },
+  {
+    "@id": "_:N1fb894aa65a54df2b8d1dfc2cd10753c",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://w3id.org/bionext/ontology/Dna"
+          },
+          {
+            "@id": "https://w3id.org/bionext/ontology/Gene"
+          },
+          {
+            "@id": "https://w3id.org/bionext/ontology/Protein"
+          },
+          {
+            "@id": "https://w3id.org/bionext/ontology/Rna"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:N054e59a7cdf94c1bb0e4fc78e9978d71",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://w3id.org/bionext/ontology/Dna"
+          },
+          {
+            "@id": "https://w3id.org/bionext/ontology/Gene"
+          },
+          {
+            "@id": "https://w3id.org/bionext/ontology/Protein"
+          },
+          {
+            "@id": "https://w3id.org/bionext/ontology/Rna"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Methylation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RelationshipType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The process in which a methyl group is covalently attached to a molecule."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Methylation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/GO_0032259"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RelationshipType"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/RegionType",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/ControlledVocabulary"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A controlled vocabulary class describing a defined a classification of sequence regions, independent of whether they occur in DNA or RNA."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Region type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://www.biopax.org/release/biopax-level3.owl#SequenceRegionVocabulary"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/ControlledVocabulary"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#disjointWith": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/CellularLocation"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/RelationshipType"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Terminator",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/DnaRegion"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A DNA sequence that signals the end of transcription., Marks the end of transcription by RNA polymerase."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Terminator"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/SO_0000141"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/DnaRegion"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/hasSmiles",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Stores the SMILES (Simplified Molecular-Input Line-Entry System) notation."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/SmallMolecule"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has SMILES"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://semanticscience.org/resource/CHEMINF_000020"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/participatesInEdge",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Relates an entity (e.g., gene, protein, or small molecule) to a specific interaction or relationship instance (edge) in which it participates. This property is used to associate biological entities with edges in a graph model, enabling representation of their roles within interactions such as binding, regulation, or signaling."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/NodeEntity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "participates in Edge"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/EdgeEntity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/participatesIn"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/modificationType",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Specifies the type of modification represented by a biological entity. This property categorizes the nature of a change or alteration (e.g., chemical modification, structural modification, or sequence alteration), providing a broader classification than mutation-specific terms and allowing description of both genetic and non-genetic modifications."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:Nc358d0b3756943969cc01f92512db3a9"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "modification type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/ControlledVocabulary"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc358d0b3756943969cc01f92512db3a9",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://w3id.org/bionext/ontology/Protein"
+          },
+          {
+            "@id": "https://w3id.org/bionext/ontology/Rna"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Increase",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RelationshipType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A relationship where one biological entity enhances, promotes, or elevates the activity, expression, or abundance of another."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Increase"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/MI_2237"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RelationshipType"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedLeft": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/NodeEntity"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedRight": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/NodeEntity"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/EdgeEntity"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/RelationshipType",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/ControlledVocabulary"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A controlled vocabulary of classes representing biological interactions and relationships between two NodeEntities, used to define the RelationshipType class in RDF. The controlled vocabulary ontology can be MI, PSIMOD, GO, and etc."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Relationship type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://www.biopax.org/release/biopax-level3.owl#RelationshipTypeVocabulary"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/ControlledVocabulary"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#disjointWith": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/CellularLocation"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/RegionType"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Activation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RelationshipType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A relationship where one entity increases or initiates the activity or function of another (e.g., gene, protein)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Activation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/INO_0000024"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RelationshipType"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedLeft": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/NodeEntity"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/EdgeEntity"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedRight": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/NodeEntity"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/EdgeEntity"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/PathwayModule"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/createdBy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Identifies the person, organization, software, or other agent responsible for creating or recording the information."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Provenance"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "created by"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasAttributedTo"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/encodedBy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Indicates a relation of two object when the first object is a product of the second object."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Rna"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "encoded by"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Dna"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://semanticscience.org/resource/SIO_010079"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/encodes"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/hasRegion",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Identifies a specific region within a gene, genome, or molecule."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:N2aa1f9d6e5f74dd48816e29722c3a0cb"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has region"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:N68f270e5874a4a8a8a9e1ceef165a01f"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://biohackathon.org/resource/faldo#Region"
+      }
+    ]
+  },
+  {
+    "@id": "_:N2aa1f9d6e5f74dd48816e29722c3a0cb",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://w3id.org/bionext/ontology/Dna"
+          },
+          {
+            "@id": "https://w3id.org/bionext/ontology/Gene"
+          },
+          {
+            "@id": "https://w3id.org/bionext/ontology/Rna"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:N68f270e5874a4a8a8a9e1ceef165a01f",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://w3id.org/bionext/ontology/DnaRegion"
+          },
+          {
+            "@id": "https://w3id.org/bionext/ontology/RnaRegion"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Mitochondria",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/CellComponent"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "the double-membraned organelles with an outer membrane and a highly folded inner membrane forming cristae, enclosing a protein-rich matrix. Their elongated shape and internal complexity reflect their role in ATP production through aerobic respiration."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "mitochondria"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/GO_0005739"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/CellComponent"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/MicroRNA",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RnaRegion"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A non-coding RNA regulates gene expression post-transcriptionally by binding to target mRNAs and inhibiting translation or promoting degradation."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "miRNA"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/SO_0000276"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RnaRegion"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/MissingInteraction",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RelationshipType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "An interaction expected in the reference pathway but absent, e.g. because of mutation."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Missing interaction"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/MI_0573"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RelationshipType"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/YRNA",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RnaRegion"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Involved in initiation of DNA replication and RNA quality control in conjunction with Ro60 protein."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "YRNA"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/SO_0000405"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RnaRegion"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/participatesIn",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Denotes a reaction, pathway, or complex in which the entity participates."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "participates in"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/RO_0000056"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Complex",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A  physical entity representing a stable assembly of molecular components that collectively perform a biological function. Such assemblies are characterized by sustained or regulatory interactions between components and exclude transient, short-lived associations involved solely in catalytic processes."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Biomolecular complex"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://www.biopax.org/release/biopax-level3.owl#Complex"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/NodeEntity"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#disjointWith": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/OrthologGroup"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/SmallMolecule"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/Dna"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/Rna"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/Gene"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/SuccessiveReaction",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RelationshipType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A relationship between catalytic entities whose biochemical reactions occur successively and are connected through a shared intermediate compound."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Successive reaction relationship"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RelationshipType"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/PrecursorMiRNA",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RnaRegion"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Hairpin-shaped RNA processed in the nucleus and cytoplasm to produce mature microRNAs."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "pre-miRNA"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/SO_0000185"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RnaRegion"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Insulator",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/DnaRegion"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A DNA element that blocks interactions between enhancers and unrelated promoters., Defines regulatory boundaries between domains."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Insulator"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/SO_0000627"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/DnaRegion"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/SignalCrosstalk",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RelationshipType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A relationship where one signaling pathway influences another,"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Signal Crosstalk"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RelationshipType"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedLeft": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/PathwayModule"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedRight": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/PathwayModule"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/Protein"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Dimerization",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RelationshipType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A relationship that two proteins bind together to form a functional unit"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Dimerization"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/GO_0046983"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RelationshipType"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedLeft": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Protein"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedRight": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Protein"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/created",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/isVariantOf",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Relates a biological variant to the reference sequence, gene, or entity from which it is derived. This property indicates that the subject represents a modified form (e.g., mutation, polymorphism, or alteration) of the object, typically described using standardized nomenclature such as HGVS. It is used to link a specific variant instance to its canonical or reference counterpart."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:Nc6d9f6e3b0c747b9966d990a339e9e13"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "is variant of"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:N137f0e5eb63c4f9c86e07301f377f15e"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/hasVariant"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc6d9f6e3b0c747b9966d990a339e9e13",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://w3id.org/bionext/ontology/Dna"
+          },
+          {
+            "@id": "https://w3id.org/bionext/ontology/Gene"
+          },
+          {
+            "@id": "https://w3id.org/bionext/ontology/Protein"
+          },
+          {
+            "@id": "https://w3id.org/bionext/ontology/Rna"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:N137f0e5eb63c4f9c86e07301f377f15e",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://w3id.org/bionext/ontology/Dna"
+          },
+          {
+            "@id": "https://w3id.org/bionext/ontology/Gene"
+          },
+          {
+            "@id": "https://w3id.org/bionext/ontology/Protein"
+          },
+          {
+            "@id": "https://w3id.org/bionext/ontology/Rna"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/hasMember",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Specifies members that are part of a group or collection."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/OrthologGroup"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has member"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:N487ab8897cd543fd8b29c89fbe485e31"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/RO_0002351"
+      }
+    ]
+  },
+  {
+    "@id": "_:N487ab8897cd543fd8b29c89fbe485e31",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://w3id.org/bionext/ontology/Gene"
+          },
+          {
+            "@id": "https://w3id.org/bionext/ontology/Protein"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/hasInChI",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Stores the IUPAC International Chemical Identifier (InChI)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/SmallMolecule"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has InChI"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://semanticscience.org/resource/CHEMINF_000038"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/clusteringMethod",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Specifies the clustering algorithm used for grouping entities."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/OrthologGroup"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "clustering method"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://w3id.org/biolink/vocab/supporting_study_method_type"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/PathwayModule",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "a set of molecular interactions, reactions, or sub-processes serving a specific biological role that groups together related interactions, reactions, or sub-processes serving a specific biological role."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Pathway module"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://www.biopax.org/release/biopax-level3.owl#Pathway"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Entity"
+      },
+      {
+        "@id": "_:N9704de6f1cfc4d6cb6cc82d36faab3cf"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#disjointWith": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/NodeEntity"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/EdgeEntity"
+      }
+    ]
+  },
+  {
+    "@id": "_:N9704de6f1cfc4d6cb6cc82d36faab3cf",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:N92154d04be2745d981aaa75f518db68e"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/pathwayComponent"
+      }
+    ]
+  },
+  {
+    "@id": "_:N92154d04be2745d981aaa75f518db68e",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://w3id.org/bionext/ontology/EdgeEntity"
+          },
+          {
+            "@id": "https://w3id.org/bionext/ontology/NodeEntity"
+          },
+          {
+            "@id": "https://w3id.org/bionext/ontology/PathwayModule"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/creator",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/hasCofactor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Associates a molecule with a required cofactor."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Protein"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has cofactor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/SmallMolecule"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.uniprot.org/core/cofactor"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/memberOfComplex",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Relates a biological entity (e.g., protein, RNA, or other molecule) to a molecular complex of which it is a constituent member. This property indicates that the subject participates as a component of the specified complex, contributing to its structure and/or function."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/NodeEntity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "member of Complex"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Complex"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/participatesIn"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/hasSubunit"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Enhancement",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RelationshipType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A genetic relationship where combined mutations result in a stronger or more severe phenotype than expected."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Enhancement"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/MI_1131"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RelationshipType"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedLeft": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Gene"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedRight": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Gene"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Nucleolus",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/CellComponent"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A sub-nuclear body where ribosomal RNA is synthesized and ribosome assembly begins, serving as a critical node for protein biosynthesis."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Nucleolus"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/GO_0005730"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/CellComponent"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/SmallInterferingRNA",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RnaRegion"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A non-coding RNAs that induce  the degradation of complementary mRNA molecules through the RNA interference pathway."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "siRNA"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/SO_0000646"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RnaRegion"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/CoExpression",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RelationshipType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A relationship where two genes or proteins are expressed under similar conditions, implying potential co-regulation."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Co-expression"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/MI_2231"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RelationshipType"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedLeft": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Gene"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/Rna"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedRight": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Gene"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/Rna"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/ExtracellularMatrix",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/CellComponent"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A complex network of proteins and polysaccharides located outside the plasma membrane that provides structural support and mediates cell signaling."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Extracellular Matrix"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/GO_0031012"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/CellComponent"
+      }
+    ]
+  },
+  {
+    "@id": "https://s3bio.gitlab.io/",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "S3Bio Lab"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/hasSeq",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Holds the nucleotide or amino acid sequence as a string."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:N61f2f444202c4d3d8887c4b3dacf780a"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has sequence"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://www.bioassayontology.org/bao#BAO_0002817"
+      }
+    ]
+  },
+  {
+    "@id": "_:N61f2f444202c4d3d8887c4b3dacf780a",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://w3id.org/bionext/ontology/Dna"
+          },
+          {
+            "@id": "https://w3id.org/bionext/ontology/Protein"
+          },
+          {
+            "@id": "https://w3id.org/bionext/ontology/Rna"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/SevenSKRNA",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RnaRegion"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "7SK is a highly conserved noncoding RNA of 331 nucleotides in animals. It  regulates transcription elongation by sequestering the positive transcription elongation factor b (P-TEFb)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "7SK small nuclear RNA"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/SO_0002340"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RnaRegion"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/CDS",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/DnaRegion"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The portion of a gene's DNA or RNA that is translated into protein., Translated portion of exon that encodes protein."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Coding Sequence (CDS)"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/SO_0000316"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/DnaRegion"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Fusion",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RelationshipType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A relationship of a hybrid gene or gene product formed from two previously separate genes, typically due to chromosomal rearrangements such as translocations or deletions."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Fusion"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/SO_0000806"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RelationshipType"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedLeft": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Gene"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedRight": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Gene"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Autophagosome",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/CellComponent"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A double-membrane vesicle that encloses cytoplasmic material and organelles for delivery to lysosomes during autophagy."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "autophagosome"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/GO_0005776"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/CellComponent"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/issued",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/MultivesicularBody",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/CellComponent"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A type of late endosome characterized by internal vesicles formed by inward budding, involved in sorting membrane proteins for degradation."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "multivesicular bodies"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/GO_0005771"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/CellComponent"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Catalysis",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RelationshipType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A relationship where one entity, typically an enzyme, facilitates a reaction involving another entity without being consumed."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Catalysis"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/GO_0003824"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RelationshipType"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedLeft": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Protein"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/Complex"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedRight": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Reaction"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/license",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/PlasmaMembrane",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/CellComponent"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "a dynamic, semi-permeable phospholipid bilayer containing embedded proteins and carbohydrates. It defines the cell boundary and regulates the transport of substances in and out of the cell."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "plasma membrane"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/GO_0005886"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/CellComponent"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/hasSpeciesCoverage",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A set of species that related to the domain"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/OrthologGroup"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has species coverage"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Taxon"
+      }
+    ]
+  },
+  {
+    "@id": "https://orcid.org/0009-0003-1344-2449",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Nutticha Silakom"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Influence",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "An occurrent entity representing a directed influence whereby a source entity modulates, activates, inhibits, or otherwise alters the state or behavior of a target entity. The target may be another EdgeEntity or a higher-level construct such as a PathwayModule."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "influence"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://www.biopax.org/release/biopax-level3.owl#Control"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/EdgeEntity"
+      },
+      {
+        "@id": "_:N1c4e2d1cf9864fb2adbaf67f5340555c"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#disjointWith": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Interaction"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/Reaction"
+      }
+    ]
+  },
+  {
+    "@id": "_:N1c4e2d1cf9864fb2adbaf67f5340555c",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:N6f47e76cc0c942e69e156a2c42232898"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/hasRight"
+      }
+    ]
+  },
+  {
+    "@id": "_:N6f47e76cc0c942e69e156a2c42232898",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://w3id.org/bionext/ontology/EdgeEntity"
+          },
+          {
+            "@id": "https://w3id.org/bionext/ontology/NodeEntity"
+          },
+          {
+            "@id": "https://w3id.org/bionext/ontology/PathwayModule"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/ERGogiIntermediateCompartment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/CellComponent"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A transient membrane-bound compartment located between the endoplasmic reticulum and Golgi apparatus that facilitates protein trafficking."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "ER-Golgi intermediate compartment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/GO_0005793"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/CellComponent"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/RegulateExpression",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RelationshipType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A relationship indicating that one entity promotes or is responsible for the gene expression of another."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Regulates xpression"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RelationshipType"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedLeft": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Gene"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/Protein"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/Rna"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedRight": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Gene"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/RnaRegion",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RegionType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A controlled vocabulary class describing a defined subregion of an RNA molecule. An RnaRegion is not a pool of discrete molecular entities but a dependent segment that exists only as part of a larger RNA molecule and is defined by its positional or functional context."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Rna region"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RegionType"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/publisher",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Silencer",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/DnaRegion"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A regulatory element that represses transcription of a gene., Prevents transcription of nearby gene sequences."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Silencer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/SO_0000625"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/DnaRegion"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/CellComponent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/CellularLocation"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The location relative to cellular structures in which a gene product performs a function, either cellular compartments (such as the nucleus, mitochondrion, or extracellular space) or stable macromolecular complexes (such as a ribosome or proteasome)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Cellular Component"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/GO_0005575"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/CellularLocation"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Decrease",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RelationshipType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A relationship where one biological entity reduces, inhibits, or diminishes the activity, expression, or abundance of another."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Decrease"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/MI_2242"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RelationshipType"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedLeft": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/NodeEntity"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedRight": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/NodeEntity"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/EdgeEntity"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/NodeEntity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A biological entity representing a pool of molecules or complexes functioning as nodes in pathway models. A NodeEntity is defined by a canonical sequence or structural reference and is annotated with descriptive features, including cellular location, naming conventions, and literature evidence."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Node entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Entity"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#disjointWith": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/EdgeEntity"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/PathwayModule"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/hasDbXref",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Indicates a cross-reference to an external database that provides additional information about the entity."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has database cross reference"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://www.geneontology.org/formats/oboInOwl#hasDbXref"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Repression",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RelationshipType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A relationship where one entity negatively regulates or suppresses the gene expression of another."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Repression"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/GO_0010629"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RelationshipType"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedLeft": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Protein"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/Rna"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedRight": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Gene"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/NegativeCorrelation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/CoExpression"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The relationship that when one gene's expression goes up, the other's consistently goes down"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Negative Correlation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/CoExpression"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedLeft": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Gene"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedRight": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Gene"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/TransferRNA",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RnaRegion"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Adapter molecule that translates mRNA codons into amino acids during protein synthesis."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "tRNA"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/SO_0000253"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RnaRegion"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Vesicle",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/CellComponent"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A small, membrane-enclosed sac within the cytoplasm, used to transport proteins, lipids, and other molecules between organelles or to the plasma membrane, playing a central role in exocytosis, endocytosis, and intracellular signaling pathways."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Vesicle"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/GO_0031982"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/CellComponent"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/hasProvenance",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Links an entity to provenance information describing the source, origin, collection, creation, or modification of the entity's data."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has provenance"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Provenance"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Nucleus",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/CellComponent"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A membrane-bounded organelle of eukaryotic cells in which chromosomes are housed and replicated."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "nucleus"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/GO_0005634"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/CellComponent"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/LysosomalMembrane",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/CellComponent"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The lipid bilayer enclosing the lysosome, containing proteins essential for substance transport and maintaining acidic conditions required for lysosomal degradation."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Lysosomal Membrane"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/GO_0005765"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/CellComponent"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Degradation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RelationshipType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A process in which a biological molecule, such as a protein, RNA, or metabolite, is broken down into simpler components, leading to loss of its original function or structure."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Degradation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/GO_0044265"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RelationshipType"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedLeft": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/NodeEntity"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedRight": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/NodeEntity"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/encodes",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A relation between two objects, in which the first object contains information that is used to produce the second object."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Dna"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "encodes"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Rna"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://semanticscience.org/resource/SIO_010078"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/encodedBy"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/hasNetCharge",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The overall electrical charge of a chemical entity after considering all atoms and charged groups in the represented chemical structure."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/SmallMolecule"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has net charge"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://semanticscience.org/resource/CHEMINF_000120"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Gene",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A sequence of DNA that contains the necessary information to produce a functional product, typically a protein or functional Rna."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Gene"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://www.biopax.org/release/biopax-level3.owl#Gene"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/NodeEntity"
+      },
+      {
+        "@id": "_:Neead6d88ffe748ae8caa0b2ceb462780"
+      },
+      {
+        "@id": "_:N37ebccef9761495d83da2ecf71b5657a"
+      },
+      {
+        "@id": "_:Nc9e44e0b96d241499d7e200ebac14994"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#disjointWith": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Dna"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/Rna"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/Protein"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/Complex"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/SmallMolecule"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/OrthologGroup"
+      }
+    ]
+  },
+  {
+    "@id": "_:Neead6d88ffe748ae8caa0b2ceb462780",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:N64f242063f634d59b178c413813c4bc8"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/hasVariant"
+      }
+    ]
+  },
+  {
+    "@id": "_:N64f242063f634d59b178c413813c4bc8",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "_:N0ac5a9c3b85443679fbb50ea63446510"
+          },
+          {
+            "@id": "https://w3id.org/bionext/ontology/Gene"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:N0ac5a9c3b85443679fbb50ea63446510",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onDataRange": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/hasHGVS"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "_:N37ebccef9761495d83da2ecf71b5657a",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/DnaRegion"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/hasRegion"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc9e44e0b96d241499d7e200ebac14994",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Gene"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/isVariantOf"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Reaction",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "An occurrent entity representing a sequence of biochemical or cellular events that transforms input entities (substrates) into output entities (products), often mediated by enzymatic or regulatory mechanisms."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Reaction"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://www.biopax.org/release/biopax-level3.owl#BiochemicalReaction"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/EdgeEntity"
+      },
+      {
+        "@id": "_:N8e0c0331f0e7468badb71baf82be3595"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#disjointWith": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Interaction"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/Influence"
+      }
+    ]
+  },
+  {
+    "@id": "_:N8e0c0331f0e7468badb71baf82be3595",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/NodeEntity"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/hasRight"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/annotates",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Represents a relationship where a DNA region provides annotation, reference, or mapping to a gene, indicating functional, positional, or regulatory linkage. Commonly used to associate genomic features such as promoters or enhancers with their related genes."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Dna"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "annotates"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Gene"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/hasProteinMember",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Identifies individual protein members of a gene or ortholog group."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/OrthologGroup"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has protein member"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Protein"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/RO_0002351"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/hasMember"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/pathwayComponent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The set of interactions and relationships  in the pathway/network."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/PathwayModule"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "pathwayComponent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:Nb60f01e4285c49bd835c821aaa317908"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://www.biopax.org/release/biopax-level3.owl#pathwayComponent"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/participatesInPathway"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nb60f01e4285c49bd835c821aaa317908",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://w3id.org/bionext/ontology/EdgeEntity"
+          },
+          {
+            "@id": "https://w3id.org/bionext/ontology/NodeEntity"
+          },
+          {
+            "@id": "https://w3id.org/bionext/ontology/PathwayModule"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/SmallMolecule",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A physical entity representing a collection of non-nucleic acid, non-protein molecules, characterized by a defined chemical structure, including small molecules and non-genomically encoded macromolecules."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Small molecule element"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://www.biopax.org/release/biopax-level3.owl#SmallMolecule"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/NodeEntity"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#disjointWith": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Dna"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/Rna"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/Protein"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/Complex"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/OrthologGroup"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/Gene"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Provenance",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A metadata that describing the sources, entities, agents, and activities involved in the creation, modification, or derivation of RDF data."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Provenance"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://www.w3.org/TR/prov-o/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#Thing"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#disjointWith": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Entity"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/ControlledVocabulary"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Dephosphorylation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RelationshipType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The process of removing one or more phosphoric (ester or anhydride) residues from a molecule."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Dephosphorylation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/GO_0016311"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RelationshipType"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedLeft": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Protein"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedRight": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Protein"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/hasEcNumber",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Links a biochemical reaction to the Enzyme Commission classification corresponding to the enzymatic activity that catalyzes the reaction."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Reaction"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has EC number"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://www.biopax.org/release/biopax-level3.owl#eCNumber"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/ThreePrimeUTR",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/UTR"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "3′ region that affects stability and localization of mRNA., The 3' untranslated region downstream of the coding sequence in mRNA."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "3' UTR"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/SO_0000205"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/UTR"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/ORF",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/DnaRegion"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A sequence of DNA that could potentially encode a protein, starting with a start codon and ending with a stop codon., Potential protein-coding frame bounded by start and stop codons."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Open Reading Frame (ORF)"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/SO_0000236"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/DnaRegion"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Suppression",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RelationshipType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A genetic relationship where a mutation in one gene compensates for or rescues the phenotype of a mutation in another gene."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Suppression"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/MI_1130"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RelationshipType"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedLeft": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Gene"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedRight": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Gene"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/derivedFrom",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Identifies another resource, dataset, or information item from which the current information was derived."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Provenance"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "derived from"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasDerivedFrom"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Irreversible",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RelationshipType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A reaction rate  always refers to a single direction (forward or reverse)"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "irreversible reaction"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://biomodels.net/SBO/SBO_0000153"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RelationshipType"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/ExtracellularVesicle",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/CellComponent"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Any vesicle that is part of the extracellular region"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Extracellular Vesicle"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/GO_1903561"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/CellComponent"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Cytoskeleton",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/CellComponent"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A structural framework within the cytoplasm that includes actin filaments, microtubules, and intermediate filaments, essential for maintaining cell shape, intracellular transport, and signal transduction."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "cytoskeleton"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/GO_0005856"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/CellComponent"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Endosome",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/CellComponent"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A membrane-bound vesicular structure involved in the internalization and sorting of materials taken up by endocytosis, forming an intermediate compartment between the plasma membrane and lysosomes."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Endosome"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/GO_0005768"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/CellComponent"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Intron",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/DnaRegion"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A non-coding segment within a gene that is removed during RNA splicing., Non-coding DNA spliced out during mRNA processing."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Intron"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/SO_0000188"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/DnaRegion"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Peroxisome",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/CellComponent"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A small, single-membrane-bound organelle containing enzymes for lipid metabolism and the detoxification of hydrogen peroxide."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "peroxisomes"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/GO_0005777"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/CellComponent"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/cellularLocation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Represents the cellular location or localization."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/NodeEntity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "cellular location"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/CellularLocation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://www.biopax.org/release/biopax-level3.owl#cellularLocation"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/EnhancerRNA",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RnaRegion"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Non-coding RNA transcribed from enhancer regions; modulates transcription of target genes."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "eRNA"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/SO_0001870"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RnaRegion"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/PiwiInteractingRNA",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RnaRegion"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A non-coding RNA protects genome integrity in germ cells by silencing transposable elements."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "piRNA"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/SO_0001035"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RnaRegion"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Binding",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RelationshipType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A physical relationship where two or more entities interact via molecular binding (e.g., protein-protein, protein-DNA)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Binding"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/GO_0005488"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RelationshipType"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedLeft": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/NodeEntity"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedRight": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/NodeEntity"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/RiboswitchRNA",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RnaRegion"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "a noncoding RNA domains that are typically found embedded in messenger RNAs, where they sense specific target molecules or elemental ions and regulate gene expression"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "RiboswitchRNA"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/SO_0000035"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RnaRegion"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/hasType",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The relationship or interaction type of the EdgeEntity class."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/EdgeEntity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RelationshipType"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://www.biopax.org/release/biopax-level3.owl#interactionType"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/hasSubunit",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Relates a biological complex to a subunit  that serves as a monomer  of its components ."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Complex"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has subunit"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/NodeEntity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://www.biopax.org/release/biopax-level3.owl#component"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Glycosylation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RelationshipType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The covalent attachment and further modification of carbohydrate residues to a substrate molecule."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Glycosylation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/GO_0070085"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RelationshipType"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/hasFunction",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "the information of  a gene to its function term sourced from external datasets (e.g., imported annotations)"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Gene"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has function"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/DoubleStrandedRNA",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RnaRegion"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Genetic material consisting of two complementary RNA strands base-paired into a double helix, often encapsulated by viral capsid proteins, which triggers antiviral responses including RNA interference"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "dsRNA"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/SO_0000965"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RnaRegion"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Association",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RelationshipType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A general relationship where entities are observed together in a context suggesting possible biological linkage."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Association"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/MI_0915"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RelationshipType"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedLeft": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/NodeEntity"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/EdgeEntity"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/PathwayModule"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedRight": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/NodeEntity"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/EdgeEntity"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/PathwayModule"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/name",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "the human-readable name of entity."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "name"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.uniprot.org/core/name"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/hasRight",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The participants on the right side of relationship."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/EdgeEntity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has right"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://www.biopax.org/release/biopax-level3.owl#right"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/publicationEvidence",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Provides a reference to supporting literature or data source."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "publication evidence"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.uniprot.org/core/citation"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Expression",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RelationshipType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The process in which a gene's sequence is converted into a mature gene product (protein or RNA). This includes the production of an RNA transcript and its processing, as well as translation and maturation for protein-coding genes."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Expression"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/GO:0010467"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RelationshipType"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedLeft": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Gene"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/Rna"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedRight": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Protein"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/hasChemFormula",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Represents the molecular formula of a chemical compound."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/SmallMolecule"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has chemical formular"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://semanticscience.org/resource/CHEMINF_000042"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/expectedLeft",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Non-logical metadata listing an allowed left-participant class for a relationship type; multiple values represent alternatives."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "expected left participant type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/expectedParticipant"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/ControlledVocabulary",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A class representing a controlled and managed vocabulary of terms used for the consistent annotation and integration of biological data. It encompasses both locally defined terms and externally sourced ontology classes that are incorporated to enable interoperability across systems."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Contolled vocabulary"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://www.biopax.org/release/biopax-level3.owl#ControlledVocabulary"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#Thing"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#disjointWith": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Entity"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/modified",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/variantType",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Specifies the type of mutation represented by a biological variant. This property categorizes the variant according to the nature of the sequence alteration (e.g., substitution, deletion, insertion, duplication, inversion, or frameshift), enabling consistent classification and filtering of variants based on mutation type. The Range of this property should be ControlledVocabulary."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:N6677c35c56ef4eecb90f0fc09416bee9"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "variant type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/ControlledVocabulary"
+      }
+    ]
+  },
+  {
+    "@id": "_:N6677c35c56ef4eecb90f0fc09416bee9",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://w3id.org/bionext/ontology/Dna"
+          },
+          {
+            "@id": "https://w3id.org/bionext/ontology/Gene"
+          },
+          {
+            "@id": "https://w3id.org/bionext/ontology/Protein"
+          },
+          {
+            "@id": "https://w3id.org/bionext/ontology/Rna"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/LongNonCodingRNA",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RnaRegion"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A non-coding RNA regulates transcription, epigenetic modification, and mRNA splicing without encoding proteins."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "lncRNA"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/SO_0001877"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RnaRegion"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/collectedDate",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Records the date and time on which the information was collected or obtained from its source."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Provenance"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "collected date"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://www.w3.org/ns/prov#generatedAtTime"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/isIsoformOf",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Relates an isoform to the canonical protein or gene from which it is derived. This property indicates that the subject represents a specific isoform, arising from processes such as alternative splicing, alternative promoter usage, or post-transcriptional variation, of the reference entity given as the object."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Protein"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "is isoform of"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Protein"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/chromosome",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Specifies the chromosome on which a gene or region is located."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Dna"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "chromosome"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://biohackathon.org/resource/faldo#location"
+      },
+      {
+        "@id": "http://purl.obolibrary.org/obo/RO_0001025"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/UTR",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/DnaRegion"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Untranslated region affecting mRNA regulation., Untranslated regions at the 5' and 3' ends of mRNA that regulate translation and stability."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "UTR"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/SO_0000203"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/DnaRegion"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/OrthologGroup",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A collection of proteins from different species that are orthologs, often identified from databases like OrthoDB or EggNOG. Represents evolutionary conserved protein functions across species."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Protein ortholog groups"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.org/net/orth#OrthologsCluster"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/NodeEntity"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#disjointWith": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Dna"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/Rna"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/Protein"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/Complex"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/Gene"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/SmallMolecule"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/TelomeraseRNA",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RnaRegion"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "a non-coding template RNA component of telomerase that directs telomere repeat synthesis at chromosome ends."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Telomerase RNA component (TERC)"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/SO_0000390"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RnaRegion"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Entity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "An abstract superclass representing any discrete biological or conceptual entity used to describe pathway systems. This class encompasses occurrents (e.g., pathways and processes,  interactions), continuants (e.g., physical entities such as genes or proteins)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://www.biopax.org/release/biopax-level3.owl#Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#Thing"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#disjointWith": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/ControlledVocabulary"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/CellularLocation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/ControlledVocabulary"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A controlled vocabulary class describing the location of a biological entity within or around a cell, based on standardized Gene Ontology cellular component terms. This includes subcellular compartments, macromolecular structures, and extracellular regions."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Cellular location"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://www.biopax.org/release/biopax-level3.owl#CellularLocationVocabulary"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/ControlledVocabulary"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#disjointWith": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RegionType"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/RelationshipType"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Ubiquitination",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RelationshipType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A relationship where one protein catalyzes the covalent addition of ubiquitin to another protein."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Ubiquitination"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/GO_0016567"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RelationshipType"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedLeft": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Protein"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedRight": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Protein"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/participatesInPathway",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Relates a biological entity (e.g., gene, protein, metabolite, or complex) and biological interaction to a biological pathway in which it participates. This property indicates that the subject plays a role in the processes or interactions represented by the pathway, such as signaling, metabolic, or regulatory pathways."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:N2e49ac1efb534a26a6d44b0647af35a5"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "participates in Pathway"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/PathwayModule"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/participatesIn"
+      }
+    ]
+  },
+  {
+    "@id": "_:N2e49ac1efb534a26a6d44b0647af35a5",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://w3id.org/bionext/ontology/EdgeEntity"
+          },
+          {
+            "@id": "https://w3id.org/bionext/ontology/NodeEntity"
+          },
+          {
+            "@id": "https://w3id.org/bionext/ontology/PathwayModule"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/NuclearPoreComplex",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/CellComponent"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A large protein complex that spans the nuclear envelope, regulating the bidirectional transport of molecules between the nucleus and cytoplasm."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Nuclear Pore Complex"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/GO_0005643"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/CellComponent"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Taxon",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A class for describing organism with scientific name at the species level or genus level, following binomial nomenclature (e.g., Homo sapiens, Escherichia coli)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Organism"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.uniprot.org/core/Taxon"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Entity"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#disjointWith": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/NodeEntity"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/EdgeEntity"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/PathwayModule"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/TranscriptionTo",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RelationshipType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The process by which the genetic information stored in DNA is copied into a new molecule of messenger RNA (mRNA)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Transcription to"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/GO_0009299"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RelationshipType"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedLeft": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Gene"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedRight": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Rna"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/SmoothER",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/CellComponent"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "An interconnected network of membrane-bound tubules lacking ribosomes, involved in lipid synthesis, detoxification, and calcium storage."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "smooth endoplasmic reticulum"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/GO_0005790"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/CellComponent"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/PolyATail",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/DnaRegion"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Post-transcriptional feature stabilizing mRNA."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Poly-A Tail"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/SO_0000553"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/DnaRegion"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/RoughER",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/CellComponent"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A series of flattened membrane sacs studded with ribosomes, primarily responsible for the synthesis and initial folding of membrane-bound and secretory proteins."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "rough endoplasmic reticulum"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/GO_0005791"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/CellComponent"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Indirect",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RelationshipType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The relationship is known to occur through one or more intermediate biological steps that are not explicitly resolved."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Indirect"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/MI_2286"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RelationshipType"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/hasLeft",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The participants on the left side of relationship."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/EdgeEntity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has left"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:Nf12a783441da41b2b73089487ce1666f"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://www.biopax.org/release/biopax-level3.owl#left"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf12a783441da41b2b73089487ce1666f",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://w3id.org/bionext/ontology/EdgeEntity"
+          },
+          {
+            "@id": "https://w3id.org/bionext/ontology/NodeEntity"
+          },
+          {
+            "@id": "https://w3id.org/bionext/ontology/PathwayModule"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/GolgiBody",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/CellComponent"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "the membrane-bound organelle found in eukaryotic cells, known for its role in modifying, sorting, and packaging proteins and lipids. Morphologically, it has a very distinctive and organized structure."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "golgi apparatus, golgi body, golgi complex"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/GO_0005794"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/CellComponent"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/CircularRNA",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RnaRegion"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A non-coding single-stranded RNAs, covalently closed RNA with regulatory function."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "circRNA"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/SO_0002291"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RnaRegion"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/EdgeEntity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "An occurrent entity describing a biological association that captures interactions or influences between participating entities. This includes relationships between NodeEntities as well as more general influence relationships that may extend to EdgeEntity or PathwayModule. This class serves as a unifying superclass for both direct molecular interactions and higher-level causal or regulatory relationships."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Edge entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://www.biopax.org/release/biopax-level3.owl#Interaction"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Entity"
+      },
+      {
+        "@id": "_:N9fd33d004691414bbba40ce747e435cb"
+      },
+      {
+        "@id": "_:Nfe2d7f1463fa412d9f61d185a70a0a95"
+      },
+      {
+        "@id": "_:N1dd21c10e0ba4b80aedf6fcfc7479b6d"
+      },
+      {
+        "@id": "_:Ncdd03d800e65498eac7aed9e1a7a41f6"
+      },
+      {
+        "@id": "_:Nb71cca3a9de24e0aa1f5d7c367f7e141"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#disjointWith": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/NodeEntity"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/PathwayModule"
+      }
+    ]
+  },
+  {
+    "@id": "_:N9fd33d004691414bbba40ce747e435cb",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/hasType"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RelationshipType"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nfe2d7f1463fa412d9f61d185a70a0a95",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RelationshipType"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/hasType"
+      }
+    ]
+  },
+  {
+    "@id": "_:N1dd21c10e0ba4b80aedf6fcfc7479b6d",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/hasLeft"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "_:N218b31c4a3094703a34f27424fbbd889"
+      }
+    ]
+  },
+  {
+    "@id": "_:N218b31c4a3094703a34f27424fbbd889",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://w3id.org/bionext/ontology/EdgeEntity"
+          },
+          {
+            "@id": "https://w3id.org/bionext/ontology/NodeEntity"
+          },
+          {
+            "@id": "https://w3id.org/bionext/ontology/PathwayModule"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:Ncdd03d800e65498eac7aed9e1a7a41f6",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:Nf990e09f483a4461856491fb40f97282"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/hasLeft"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf990e09f483a4461856491fb40f97282",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://w3id.org/bionext/ontology/EdgeEntity"
+          },
+          {
+            "@id": "https://w3id.org/bionext/ontology/NodeEntity"
+          },
+          {
+            "@id": "https://w3id.org/bionext/ontology/PathwayModule"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:Nb71cca3a9de24e0aa1f5d7c367f7e141",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/hasRight"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#Thing"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/hasOrthologGroup",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Links an entity (e.g., a gene or protein) to the identifier of its ortholog group, representing a set of evolutionarily conserved homologs across species."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Protein"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has ortholog group"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/OrthologGroup"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.org/net/orth#hasOrtholog"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Ribosome",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/CellComponent"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A small, non-membrane-bound macromolecular complex composed of rRNA and proteins that synthesizes proteins by translating mRNA."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "ribosome"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/GO_0005840"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/CellComponent"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Apoptosome",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/CellComponent"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A multi-protein complex that forms in the cytoplasm during apoptosis and activates initiator caspases to trigger programmed cell death."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "apoptosome"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/GO_0043293"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/CellComponent"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Enhancer",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/DnaRegion"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A DNA sequence that increases transcription levels of a gene from a distance., Acts over distance to increase gene transcription."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Enhancer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/SO_0000165"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/DnaRegion"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Reversible",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RelationshipType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A reaction rate  always refers to a  reversible  direction (forward and reverse). They can proceed in both directions."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "reversible reaction"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://biomodels.net/SBO/SBO_0000156"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RelationshipType"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/hasHGVS",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Associates a biological variant with its HGVS-compliant description. This property links a variant entity to a string or identifier that encodes its precise sequence alteration using the standardized nomenclature defined by the Human Genome Variation Society (HGVS)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/NodeEntity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has HGVS"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/expectedParticipant",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Non-logical metadata listing an allowed participant class for a relationship type; multiple values represent alternatives."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "expected participant"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/length",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Specifies the number of nucleotides or residues in the feature."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:Nd07eedbbc24242eeae7599105cce98a0"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "length"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#positiveInteger"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.uniprot.org/core/length"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nd07eedbbc24242eeae7599105cce98a0",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://w3id.org/bionext/ontology/Dna"
+          },
+          {
+            "@id": "https://w3id.org/bionext/ontology/Rna"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/hasCasNum",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "the object has an identifier used by the Chemical Abstracts Service database."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/SmallMolecule"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has CAS number"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://semanticscience.org/resource/CHEMINF_00044"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/hasSource",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Identifies the original source from which the information was obtained, such as a URL, book, paper, database, or report."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Provenance"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has source"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.org/dc/terms/source"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/FivePrimeCap",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/DnaRegion"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Cap added to the 5′ end of mRNA for protection and translation."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "5' Cap"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/SO_0000581"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/DnaRegion"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/modifiedDate",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Records the date and time when the information was most recently modified."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Provenance"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "modified date"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.org/dc/terms/modified"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/hasSubcomplex",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Relates a biological complex to a subcomplex that serves as one of its components."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Complex"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has subcomplex"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Complex"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/hasWeight",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Indicates the significance value assigned to an edge or interaction, representing its relative strength, reliability, or importance within a network. Typically expressed as a floating-point number."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/EdgeEntity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has weight"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#float"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/hasInChIKey",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Stores the hashed InChIKey version of the chemical identifier."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/SmallMolecule"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has InChI Key"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://semanticscience.org/resource/CHEMINF_000059"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/hasModificationSitedOn",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Specifies the amino acid residue and position where the protein is modified, expressed in text (e.g., 'Ser473', Ser473-phosphorylation”, “Lys9Ac\"). The RDF object represented as an RDF resource identified by the protein accession and modification site (e.g., 'UniProt:P31749_Ser473', 'UniProt:P68431_Lys9Ac')"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:N1b490b80f2404bc5a9036de090e4fe3d"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has modification sited on"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "_:N1b490b80f2404bc5a9036de090e4fe3d",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://w3id.org/bionext/ontology/Protein"
+          },
+          {
+            "@id": "https://w3id.org/bionext/ontology/Rna"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/hasConfidenceScore",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Score representing confidence in the annotation or relationship."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:N32f21513ed944c1ab637c09f4c0361f2"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has confidence score"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#float"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://w3id.org/biolink/vocab/ConfidenceLevel"
+      }
+    ]
+  },
+  {
+    "@id": "_:N32f21513ed944c1ab637c09f4c0361f2",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://w3id.org/bionext/ontology/EdgeEntity"
+          },
+          {
+            "@id": "https://w3id.org/bionext/ontology/OrthologGroup"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Cytoplasm",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/CellComponent"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The part of the cell contained within the entire plasma membrane, excluding the nucleus, and composed of the cytosol and all organelles except the nucleus and their contents."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "cytoplasm"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/GO_0005737"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/CellComponent"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/startPos",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Relates a sequence feature to an object that represents its start coordinate on a reference sequence."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:Ne6db8652e9d5445d9cad0894488660d4"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "start position"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#positiveInteger"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/RO_0002516"
+      },
+      {
+        "@id": "http://biohackathon.org/resource/faldo#begin"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ne6db8652e9d5445d9cad0894488660d4",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://w3id.org/bionext/ontology/Dna"
+          },
+          {
+            "@id": "https://w3id.org/bionext/ontology/Rna"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/StateTransition",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RelationshipType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A biological event in which the same biological entity changes its state without becoming a different entity. The change may involve its location or membrane orientation, conformation or molecular modification state, or functional activity."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "State transition"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RelationshipType"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Lysosome",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/CellComponent"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "the spherical, membrane-bound organelles containing hydrolytic enzymes active at low pH. They function as the digestive system of the cell, breaking down waste, macromolecules, and cellular debris."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "lysosome"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/GO_0005764"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/CellComponent"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Exon",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/DnaRegion"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A DNA sequence that remains in the mature RNA and may encode protein., Part of gene retained in mature RNA; may include coding or UTR."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Exon"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/SO_0000147"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/DnaRegion"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/synonyms",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Alternative names or labels for the same entity."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "synonyms"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#altLabel"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/AntisenseRNA",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RnaRegion"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "RNA molecules are commonly noncoding and play regulatory roles through base-pairing interactions or transcriptional interference."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "asRNA"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/SO_0000644"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RnaRegion"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Translation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RelationshipType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The process by which a cell's machinery reads the genetic information on an mRNA molecule and synthesizes a protein from it."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Translation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/GO_0006412"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RelationshipType"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedLeft": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Rna"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedRight": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Protein"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Promoter",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/DnaRegion"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A DNA region where RNA polymerase binds to initiate transcription., Initiates transcription by binding RNA polymerase."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Promoter"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/SO_0000167"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/DnaRegion"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/organism",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Identifies the organism to which the entity belongs."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "organism"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Taxon"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://www.biopax.org/release/biopax-level3.owl#organism"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/GuideRNA",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RnaRegion"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "a non-coding RNA that guides site-specific genome editing or RNA modification, e.g., in CRISPR or RNA editing complexes."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "gRNA"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/SO_0000602"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RnaRegion"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/DnaRegion",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RegionType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A controlled vocabulary class describing a defined subregion of a DNA molecule. A DNARegion is not a pool of discrete molecular entities but a contextual segment that exists only as part of a larger DNA molecule and is defined by its relative position or functional role."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Dna region"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RegionType"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Protein",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A physical entity consisting of a single polypeptide chain or protein monomer, defined by an amino acid sequence, describing a protein. Examples: EGFR (epidermal growth factor receptor), insulin."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Protein element"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://www.biopax.org/release/biopax-level3.owl#Protein"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/NodeEntity"
+      },
+      {
+        "@id": "_:N3d7b5745209c43d09fdb9c0b7a19ebec"
+      },
+      {
+        "@id": "_:N3346773879db4a2e975edcf65d2be9c6"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#disjointWith": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/OrthologGroup"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/SmallMolecule"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/Dna"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/Rna"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/Gene"
+      }
+    ]
+  },
+  {
+    "@id": "_:N3d7b5745209c43d09fdb9c0b7a19ebec",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:N475019ff48144d5897221d2496f14b7b"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/hasVariant"
+      }
+    ]
+  },
+  {
+    "@id": "_:N475019ff48144d5897221d2496f14b7b",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "_:Nbdd3ddb05374444484f909c43f25fc2f"
+          },
+          {
+            "@id": "https://w3id.org/bionext/ontology/Protein"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:Nbdd3ddb05374444484f909c43f25fc2f",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onDataRange": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/hasHGVS"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "_:N3346773879db4a2e975edcf65d2be9c6",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Protein"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/isVariantOf"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/endPos",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Relates a sequence feature to an object that represents its end coordinate on a reference sequence."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:N096e4bc9d41e4497a6656367e3bd4dd5"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "end position"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#positiveInteger"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/RO_0002518"
+      },
+      {
+        "@id": "http://biohackathon.org/resource/faldo#end"
+      }
+    ]
+  },
+  {
+    "@id": "_:N096e4bc9d41e4497a6656367e3bd4dd5",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://w3id.org/bionext/ontology/Dna"
+          },
+          {
+            "@id": "https://w3id.org/bionext/ontology/Rna"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Inhibition",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RelationshipType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A relationship where one entity reduces, blocks, or suppresses the activity or function of another (e.g. gene, protein)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Inhibition"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/INO_0000124"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RelationshipType"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedLeft": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/NodeEntity"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedRight": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/NodeEntity"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/EdgeEntity"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/PathwayModule"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Phosphorylation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RelationshipType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A protein modification that effectively replaces a hydrogen atom with a phosphono group (H2PO3 or 'phosphate')."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Phosphorylation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/MOD_00696"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RelationshipType"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/RibosomalRNA",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RnaRegion"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Forms the catalytic and structural core of ribosomes, facilitating peptide bond formation."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "rRNA"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/SO_0000252"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RnaRegion"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/expectedRight",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Non-logical metadata listing an allowed right-participant class for a relationship type; multiple values represent alternatives."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "expected right participant type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/expectedParticipant"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/CellWall",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/CellComponent"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "a polarized stack of flattened membrane-bound cisternae, with associated vesicles, involved in modifying, sorting, and packaging proteins and lipids. It has a cis (receiving) face and a trans (shipping) face, reflecting its role in intracellular transport."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "cell wall"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/GO_0005618"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/CellComponent"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Interaction",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "An occurrent entity representing an association between two or more biological entities that results in a change or influence on their state, function, or behavior. Interactions may involve physical contact, information transfer, or indirect functional relationships."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Interaction"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/EdgeEntity"
+      },
+      {
+        "@id": "_:Nf615517b2bac4494976b48bd3fb84762"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#disjointWith": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Reaction"
+      },
+      {
+        "@id": "https://w3id.org/bionext/ontology/Influence"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf615517b2bac4494976b48bd3fb84762",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/NodeEntity"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/hasRight"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/Vacuole",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/CellComponent"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A membrane-bound organelle prominent in plant and fungal cells, involved in storage, degradation, and maintaining turgor pressure."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "vacuole"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/GO_0005773"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/CellComponent"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/bionext/ontology/NoInteraction",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/bionext/ontology/RelationshipType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A relationship where the combined effect of two mutations shows no significant difference from their individual effects."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "No interaction"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/MI_2226"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/RelationshipType"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedLeft": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Gene"
+      }
+    ],
+    "https://w3id.org/bionext/ontology/expectedRight": [
+      {
+        "@id": "https://w3id.org/bionext/ontology/Gene"
+      }
+    ]
+  }
+]
