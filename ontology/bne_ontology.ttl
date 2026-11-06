@@ -28,12 +28,12 @@ bn: a owl:Ontology ;
     dct:creator <https://orcid.org/0009-0003-1344-2449> ;
     dct:issued "2026-07-13"^^xsd:date ;
     dct:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dct:modified "2026-08-06"^^xsd:date ;
+    dct:modified "2026-10-30"^^xsd:date ;
     dct:publisher <https://s3bio.gitlab.io/> ;
     rdfs:comment """An ontology for representing biological entities, pathway participation, orthologous relationships, evidence, and cross-database integration for yeast and human biological models.
 """@en ;
-    owl:versionIRI <https://w3id.org/bionext/releases/v1.0.0/bionext.ttl> ;
-    owl:versionInfo "1.0.0" .
+    owl:versionIRI <https://w3id.org/bionext/releases/v1.1.0/bionext.ttl> ;
+    owl:versionInfo "1.1.0" .
 
 bn:Activation a owl:Class,
         owl:NamedIndividual,
@@ -1111,6 +1111,10 @@ bn:variantType a owl:ObjectProperty ;
 
 dct:modified a owl:AnnotationProperty .
 
+<https://orcid.org/0009-0003-1344-2449> rdfs:label "Nutticha Silakom"@en .
+
+<https://s3bio.gitlab.io/> rdfs:label "S3Bio Lab"@en .
+
 bn:annotates a owl:ObjectProperty ;
     rdfs:label "annotates"@en ;
     rdfs:comment "Represents a relationship where a DNA region provides annotation, reference, or mapping to a gene, indicating functional, positional, or regulatory linkage. Commonly used to associate genomic features such as promoters or enhancers with their related genes." ;
@@ -1164,10 +1168,6 @@ bn:pathwayComponent a owl:ObjectProperty ;
             owl:unionOf ( bn:EdgeEntity bn:NodeEntity bn:PathwayModule ) ] ;
     rdfs:seeAlso bp:pathwayComponent ;
     owl:inverseOf bn:participatesInPathway .
-
-<https://orcid.org/0009-0003-1344-2449> rdfs:label "Nutticha Silakom"@en .
-
-<https://s3bio.gitlab.io/> rdfs:label "S3Bio Lab"@en .
 
 bn:Influence a owl:Class ;
     rdfs:label "influence" ;
@@ -1388,9 +1388,6 @@ bn:Dna a owl:Class ;
     rdfs:comment "A physical entity consisting of deoxyribonucleotide monophosphates. Represents a pool of DNA molecules. Use DnaRegion for subregions." ;
     rdfs:seeAlso bp:Dna ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:allValuesFrom bn:Dna ;
-            owl:onProperty bn:isVariantOf ],
-        [ a owl:Restriction ;
             owl:allValuesFrom bn:DnaRegion ;
             owl:onProperty bn:hasRegion ],
         [ a owl:Restriction ;
@@ -1400,6 +1397,9 @@ bn:Dna a owl:Class ;
                                 owl:onProperty bn:hasHGVS ;
                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ] bn:Dna ) ] ;
             owl:onProperty bn:hasVariant ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom bn:Dna ;
+            owl:onProperty bn:isVariantOf ],
         bn:NodeEntity ;
     owl:disjointWith bn:Complex,
         bn:OrthologGroup,
@@ -1415,18 +1415,18 @@ bn:EdgeEntity a owl:Class ;
             owl:someValuesFrom [ a owl:Class ;
                     owl:unionOf ( bn:EdgeEntity bn:NodeEntity bn:PathwayModule ) ] ],
         [ a owl:Restriction ;
-            owl:allValuesFrom bn:RelationshipType ;
-            owl:onProperty bn:hasType ],
+            owl:onProperty bn:hasType ;
+            owl:someValuesFrom bn:RelationshipType ],
         [ a owl:Restriction ;
             owl:onProperty bn:hasRight ;
             owl:someValuesFrom owl:Thing ],
         [ a owl:Restriction ;
-            owl:onProperty bn:hasType ;
-            owl:someValuesFrom bn:RelationshipType ],
-        [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Class ;
                     owl:unionOf ( bn:EdgeEntity bn:NodeEntity bn:PathwayModule ) ] ;
             owl:onProperty bn:hasLeft ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom bn:RelationshipType ;
+            owl:onProperty bn:hasType ],
         bn:Entity ;
     owl:disjointWith bn:NodeEntity,
         bn:PathwayModule .
@@ -1443,15 +1443,15 @@ bn:Rna a owl:Class ;
     rdfs:comment "A physical entity consisting of ribonucleotide monophosphates. Represents a pool of Rna molecules. Use RnaRegion for subregions. Examples: let-7 microRna, mRna, rRna." ;
     rdfs:seeAlso bp:Rna ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom bn:RnaRegion ;
+            owl:onProperty bn:hasRegion ],
+        [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Class ;
                     owl:intersectionOf ( [ a owl:Restriction ;
                                 owl:onDataRange xsd:string ;
                                 owl:onProperty bn:hasHGVS ;
                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ] bn:Rna ) ] ;
             owl:onProperty bn:hasVariant ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom bn:RnaRegion ;
-            owl:onProperty bn:hasRegion ],
         [ a owl:Restriction ;
             owl:allValuesFrom bn:Rna ;
             owl:onProperty bn:isVariantOf ],
@@ -1487,11 +1487,11 @@ bn:Gene a owl:Class ;
     rdfs:comment "A sequence of DNA that contains the necessary information to produce a functional product, typically a protein or functional Rna." ;
     rdfs:seeAlso bp:Gene ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:allValuesFrom bn:Gene ;
-            owl:onProperty bn:isVariantOf ],
-        [ a owl:Restriction ;
             owl:allValuesFrom bn:DnaRegion ;
             owl:onProperty bn:hasRegion ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom bn:Gene ;
+            owl:onProperty bn:isVariantOf ],
         [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Class ;
                     owl:intersectionOf ( [ a owl:Restriction ;
