@@ -159,6 +159,17 @@ def term_graph(g, s):
     return sub
 
 
+def release_list():
+    releases = sorted((ROOT / "releases").glob("v*/"), key=lambda p: [int(x) for x in p.name[1:].split(".")], reverse=True)
+    if not releases:
+        return ""
+    items = "".join(
+        f'<li>{r.name}: ' + " ".join(f'<a href="releases/{r.name}/{f.name}">{f.suffix[1:]}</a>' for f in sorted(r.glob("bionext.*"))) + "</li>"
+        for r in releases
+    )
+    return f"<h2>Releases</h2><ul>{items}</ul>"
+
+
 def build_index(g, terms):
     onto = BN[""]
     title = g.value(onto, RDFS.label) or "BioNExt Ontology"
@@ -178,6 +189,7 @@ def build_index(g, terms):
 <div class="iri">{html.escape(str(onto))} · version {html.escape(str(version))}</div>
 <p class="def">{html.escape(str(comment).strip())}</p>
 <p class="dl"><a href="bionext.ttl">Turtle</a><a href="bionext.owl">RDF/XML</a><a href="releases/v{html.escape(str(version))}/bionext.ttl">Release v{html.escape(str(version))}</a></p>
+{release_list()}
 <input id="q" type="search" placeholder="Filter {len(terms)} terms…" aria-label="Filter terms">
 {''.join(sections)}
 <script>
@@ -200,7 +212,6 @@ def main():
     if OUT.exists():
         shutil.rmtree(OUT)
     (OUT / "ontology").mkdir(parents=True)
-    version = str(g.value(BN[""], OWL.versionInfo) or "")
     for s in terms:
         name = local(s)
         (OUT / "ontology" / f"{name}.html").write_text(build_term(g, s, usages[s]), encoding="utf-8")
@@ -214,12 +225,9 @@ def main():
     owl = SRC.with_suffix(".owl")
     if owl.exists():
         shutil.copy(owl, OUT / "bionext.owl")
-    if version:
-        rel = OUT / "releases" / f"v{version}"
-        rel.mkdir(parents=True)
-        shutil.copy(SRC, rel / "bionext.ttl")
-        if owl.exists():
-            shutil.copy(owl, rel / "bionext.owl")
+    releases = ROOT / "releases"
+    if releases.exists():
+        shutil.copytree(releases, OUT / "releases")
     (OUT / ".nojekyll").touch()
     print(f"Built {len(terms)} term pages into {OUT}")
 
