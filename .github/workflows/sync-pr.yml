@@ -1,0 +1,29 @@
+# Opens a pull request when S3Bio/BioNExt pushes new ontology files to
+# sync/bionext (see .github/workflows/sync-bionext-ontology.yml there).
+name: Open sync pull request
+
+on:
+  push:
+    branches: [sync/bionext]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Open or update the pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          TITLE: ${{ github.event.head_commit.message }}
+        run: |
+          existing=$(gh pr list --head sync/bionext --state open --json number --jq '.[0].number')
+          if [ -n "$existing" ]; then
+            gh pr edit "$existing" --title "$TITLE"
+            gh pr comment "$existing" --body "Updated with $GITHUB_SHA."
+          else
+            gh pr create --head sync/bionext --base main --title "$TITLE" --body "Automatic sync of \`ontology/\` and \`releases/\` from S3Bio/BioNExt. Merging publishes the term pages."
+          fi
